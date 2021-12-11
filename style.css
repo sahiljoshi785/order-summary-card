@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    /* ### Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* ### Neutral */
+    --Pale-blue-light: hsla(225, 67%, 91%, 0.315);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /* weights */
+    --weight-500: 500;
+    --weight-700: 700;
+    --weight-900: 900;
+    --border-radions: 12px;
+    --border-radions-low: 8px;
+    --innerWrapper-padding: 20px 18px 18px 18px;
+    --card-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --btn-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display';
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__outerMost__div {
+    height: 400px;
+    width: 240px;
+    background-color: var(--Very-pale-blue);
+    border-radius: var(--border-radions);
+    box-shadow: var(--card-shadow);
+}
+
+.heroImg__wrapper {
+    width: 100%;
+    height: 35%;
+    background-color: red;
+    background-image: url('./images/illustration-hero.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: var(--border-radions);
+    border-top-right-radius: var(--border-radions);
+}
+
+.cardInfo__parent__wrapper {
+    width: 100%;
+    height: 65%;
+    padding: var(--innerWrapper-padding);
+}
+
+.cardInfo__inner___wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardInfo__inner___wrapper h4 {
+    color: black;
+    font-weight: var(--weight-900);
+    font-size: 1em;
+}
+
+.cardInfo__inner___wrapper p {
+    color: var(--Desaturated-blue);
+    font-weight: 100;
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.cardInfo__inner___wrapper .productInfo__outer__wrapper {
+    width: 100%;
+    height: 25%;
+    background-color: var(--Pale-blue-light);
+    margin-bottom: 18px;
+    border-radius: var(--border-radions-low);
+    display: flex;
+    padding: 8px;
+}
+
+.left__wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left__wrapper .iconWrapper {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url('./images/icon-music.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.flex___wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left__wrapper .bold {
+    margin: 0 0 2px 0;
+    font-weight: var(--weight-900);
+    color: black;
+    font-size: 0.7em;
+}
+
+.left__wrapper .price {
+    margin: 0;
+    font-weight: var(--weight-900);
+    color: var(--Desaturated-blue);
+    font-size: 0.6em;
+}
+
+.right__wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Desaturated-blue);
+    font-weight: var(--weight-700);
+    font-size: 0.6em;
+}
+
+.cardInfo__inner___wrapper button {
+    width: 100%;
+    padding: 9px 0px;
+    border: none;
+    outline: none;
+    color: var(--Very-pale-blue);
+    font-size: 0.7em;
+    font-weight: var(--weight-900);
+    background-color: var(--Bright-blue);
+    border-radius: var(--border-radions-low);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.350s ease;
+}
+
+.cardInfo__inner___wrapper button:hover {
+    box-shadow: none;
+}
+
+.cardInfo__inner___wrapper .subInfo {
+    margin: 12px 0px 0px 0px;
+    color: var(--Desaturated-blue);
+    font-weight: var(--weight-700);
+}
